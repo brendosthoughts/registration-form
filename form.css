@@ -102,10 +102,7 @@ height: 3em;
 background: #a6f16c;
 }
 .extraInfo nav .active{
-
 	background: #409300;
-
-
 }
 .spa .spa_type{
 display: block;
@@ -206,7 +203,41 @@ border:3px solid #E065BB;
 font-size:2em;
 padding:1em 0em 1em 0em;
 text-align : center;
-margin: 1em 25% 1em 25% ;
+margin: 2em 25% 1em 25% ;
+}
+.pre-activities{
+	background:#F0F0F0;
+	width: 90%;
+border: 5px solid #34d800;
+border-bottom:none;
+border-radius: 2em;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+width:90%;
+margin:0;
+margin-left: 5%;
+margin-right: 5%;
+padding-bottom: 2em;
+
+}
+.pre-activities p{
+	font-size: 1.2em;
+width: 90%;
+margin: 0em 5% 0em 5%;
+}
+.pre-activities .note{
+	margin: 1.5em 0em 0em 0em ;
+	width:47%;
+	font-size: 1.3em;
+	font-weight:bold;
+	padding: 0.5em;
+	color: white;
+	background: #ff6f00;
+	float:right;
+}
+.pre-activities .note span {
+	text-decoration: underline;
+	font-style: italic;
 }
 .day-activities{
 border: 5px solid #34d800;
@@ -216,6 +247,14 @@ margin-left: 5%;
 margin-right: 5%;
 margin-bottom: 3em;
 }
+.top{
+border-top: solid 5px #87f03c;
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+}
+.top .day{
+margin-top: 3.5em;
+}
 form{
 	display:block;
 	width: 100%;
@@ -223,19 +262,6 @@ form{
 .close{
 
 
-}
-input[type="radio"] + span{ /*the span element that immediately follow the radio button */
-	visibility: hidden; /*temporarily hide the "YES" label*/
-	background: #6EB558;
-}
- 
-input[type="radio"] + span:after{
-	content: "yes"; /*if CSS are disbled span elements are not displayed*/
-}
- 
- 
-input[type="radio"]:checked + span{
-	visibility: visible; /*show the "YES" label only if the radio button is checked*/
 }
 
 #start-form{
@@ -320,9 +346,79 @@ border-left: 3px solid #E065BB;
 border-right:3px solid #E065BB;
 
 }
-.parsley-error{
+.full-page .section{
+	font-size:1.5em;
+	margin: 2em ;
+	border: 5px solid #34d800;
+border-radius: 1em;
+ width: 80%;
+ margin-left: 10%;
+text-align: center;
 
+	background: #F0F0F0;
 }
+h4{
+	display:block;
+background:#c10087;
+color:white;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border:3px solid #E065BB;
+border-top:none;
+height: 2em;
+
+font-size:1.5em;
+	margin-top: 0px;
+}
+.full-page .tripExtension{
+	text-align: left;
+}
+.full-page .note{
+	font-size: 0.8em;
+	display: block;
+	width:95%;
+	text-align: left;
+	margin-left: 5%;
+}
+h7{
+	font-size:1.1em;
+	font-weight:600;
+	margin: 0.75em;
+	width:100%;
+	text-align:center;
+	display:block;
+}
+.full-page .info{
+	margin: 1em;
+	display: block;
+	text-align:center;
+	width:100%;
+}
+
+label{
+	margin-left: 5em;
+}
+
+input[type="textarea"]{
+	text-align:left;
+	width: 80%;
+	margin-left: 10%;
+	height: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ul.parsley-error-list{
 	border-radius: 5px;
 	border-bottom-left-radius: 0px;

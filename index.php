@@ -26,7 +26,7 @@ Enter the Information Below to Get Started
 </p>
 <p>
 <label for="email" >Email</label> 
-<input id="email" data-trigger="change" parsley-required="true" parsley-type="email"  type="email" name="email" class="textArea" placeholder="Email address"/>
+<input id="email" data-trigger="change" parsley-required="true" parsley-type="email" name="email" class="textArea" placeholder="Email address"/>
 </p>
 
 <input type="submit" class="submit" name="Submit" value="Next >>" placeholder="">

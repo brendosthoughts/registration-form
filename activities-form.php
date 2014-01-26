@@ -7,8 +7,9 @@
 </head>
 <body>
 <div class="wrapper">
+<div class="pre-activities">
 <h1>
-Acticities Registration
+Activities Registration
 </h1>
 <P>
 Mannington invites you to participate in your choice of optional activity on the afternnons of Saturday, May 3, 2014 and Sunday, May 4, 2014. 
@@ -16,13 +17,13 @@ As space is limited, we encourage you to send back your activity registration fo
 activities will be offered concurrently, therefore only one may be chosen per day, and not all activities are available each day.
 </P>
 
-<span>
-Please note: This form will be used as a guideline for making reservations only; it is not an activity confirmation. Your 
-activity confirmation will be included in your travel package which will be sent to you approximately 10 days prior to your departure.
+<span class="note">
+<span>Note:</span> This form will be used as a guideline for making reservations. <span> It is not an activity confirmation.</span> Your 
+activity confirmation will be included in your travel package which will be sent to you approximately 10 days prior to departure.
 </span>
-
-<form  id="activity" action="activities_form.php" method="POST">
-<div class="day-activities">
+</div>
+<form action="handle_form.php" method="POST" parsley-validate>
+<div class="day-activities top">
 <span class="day"> Activites for Saturday, May 3rd</span>
 <div class="golf activity">
 	<div class="mainInfo">
@@ -96,7 +97,7 @@ activity confirmation will be included in your travel package which will be sent
 	 <div id="rain">Vichy Rain Experience</div>
 	 <div id="body">Body Therapy</div>
 	 <div id="facial">Facial Therapy</div>
-	 <div id="nails">Nail Services</div>
+	 <div id="nails">Nails & Hair</div>
 	 </nav>
 	 <ul class="spa_type touch">
 	 	<li class="spaTreatment" role="button">
@@ -592,7 +593,7 @@ activity confirmation will be included in your travel package which will be sent
 <div class="activity">
 	<div class="tennis mainInfo">
 
-	<img src="images/golf.jpg">
+	<img src="images/tennis.jpg">
 		<div class="right">
 		<h3> Play some Tennis</h3>
 		<p>
@@ -671,7 +672,7 @@ activity confirmation will be included in your travel package which will be sent
 
 <div class="activity">
 	<div class="leisure mainInfo">
-	<img src="images/golf.jpg">
+	<img src="images/leisure.jpg">
 	<div class="right">
 		<h3> Leisure Time</h3>
 		<p>
@@ -771,7 +772,7 @@ activity confirmation will be included in your travel package which will be sent
 	 <div id="rain">Vichy Rain Experience</div>
 	 <div id="body">Body Therapy</div>
 	 <div id="facial">Facial Therapy</div>
-	 <div id="nails">Nail Services</div>
+	 <div id="nails">Nail & Hair</div>
 	 </nav>
 	 <ul class="spa_type touch">
 	 	<li class="spaTreatment" role="button">
@@ -1267,7 +1268,7 @@ activity confirmation will be included in your travel package which will be sent
 <div class="activity">
 	<div class="tennis mainInfo">
 
-	<img src="images/golf.jpg">
+	<img src="images/tennis.jpg">
 		<div class="right">
 		<h3> Play some Tennis</h3>
 		<p>
@@ -1293,7 +1294,7 @@ activity confirmation will be included in your travel package which will be sent
 
 <div class="activity">
 	<div class="leisure mainInfo">
-	<img src="images/golf.jpg">
+	<img src="images/leisure.jpg">
 	<div class="right">
 		<h3> Leisure Time</h3>
 		<p>
