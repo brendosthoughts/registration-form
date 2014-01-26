@@ -1,0 +1,347 @@
+body{
+overflow-x: hidden;
+background:#87f03c;
+width:100%;
+}
+.wrapper{
+	width: 100%;
+	height:auto;
+}
+.activity{
+	font-size:1.2em;
+	width: 90%;
+	height: 13.5em;
+	background: #F0F0F0;
+	color: black;
+	display: block;
+	margin: 1em 5% 1em 5%;
+	overflow:hidden;
+	border-radius: 1em;
+}
+.mainInfo img{
+
+width: 30%;
+float: left;
+}
+.mainInfo{
+width: 100%;
+height:100%;
+display:block;
+position: relative;
+
+}
+.mainInfo .right{
+	width: 65%;
+	float: right;
+	height: 100%;
+	padding: 0em 1em 0em 1em;
+}
+.mainInfo .right h3{
+	text-align:center;
+}
+.extraInfo{
+	width: 100%;
+	height: 100%;
+ display:none;
+text-align:center;
+}
+.extraInfo .me{
+ float:left;
+ width: 40%;
+}
+/*styling for golf*/
+.golf{ height:auto; margin-bottom:2em;}
+.golf .mainInfo{
+	height:13em;
+}
+.golf .extraInfo{
+height:auto;
+}
+.golfShoes{
+display:inline-block;
+	float:left;
+	width: 7em;
+	margin-left: 5em;
+}
+
+.golfShoes label{
+	float:left;
+	clear:left;
+}
+.golfShoes input{
+	float:right;
+	clear:right;
+}
+
+.shoe-size{
+	float:right;
+	width: 50%;
+}
+.shoe-size input{
+	font-size:2em;
+}
+/*styling for the spa*/
+.spa{ height:auto; margin-bottom:2em;}
+.spa .mainInfo{
+	height:13em;
+}
+.spa .extraInfo{
+	height:auto;
+	min-height:13em;
+}
+.extraInfo nav div{
+	cursor: pointer;
+width: calc(20% - 2px);
+float: left;
+margin: 0%;
+border-left: inset 2px green;
+border-bottom: inset 2px green;
+
+font-size: 1.3em;
+height: 3em;
+background: #a6f16c;
+}
+.extraInfo nav .active{
+
+	background: #409300;
+
+
+}
+.spa .spa_type{
+display: block;
+width: 100%;
+float: left;
+margin: 0em !important;
+margin-left: 0em;
+padding-left: 0em;
+display:none;
+}
+.spa .spa_type li{
+	cursor:pointer;
+	padding: 0.5em;
+	text-align:left;
+	border:1px solid green;
+display: block;
+width: calc(100% - 1em);
+
+}
+.spa .spa_type li span{
+font-weight: bold;
+font-size:1.2em;
+font-style: italic;
+}
+.spa .spa_type li:nth-child(2n){
+	background: #a6f16c;
+}
+.spa .select{
+display:none;
+}
+.me span{
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	padding: 0.3em;
+	font-style: italic;
+}
+.me span:first-child{
+	font-style: none;
+	font-size: 1.7em;
+	text-decoration: underline;
+}
+.extrInfo input{
+	display:block;
+	
+}
+
+.extraInfo .guest{
+ float:right;
+ width: 40%;
+}
+.guest span{
+	padding: 0.3em;
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	font-style: italic;
+}
+.guest span:first-child{
+	font-size: 1.7em;
+	text-decoration: underline;
+	font-style: none;
+}
+.click2register{
+	display:inline-block;
+	position: absolute;
+	right: 1em;
+	bottom:0;
+	font-size:1.5em;
+	font-style: italic;
+
+}
+.spa .select{
+	width: 100%;
+	height: 3em;
+display:none;
+}
+.submit{
+width: 20%;
+min-width:8em;
+border-radius: 1em;
+background:#c10087;
+color:white;
+border:3px solid #E065BB;
+height: 3em;
+font-size:2em;
+margin: 1em 40% 1em 40%;
+}
+.day{
+
+width: 50%;
+display:block;
+border-radius: 0.5em;
+background:#c10087;
+color:white;
+border:3px solid #E065BB;
+
+font-size:2em;
+padding:1em 0em 1em 0em;
+text-align : center;
+margin: 1em 25% 1em 25% ;
+}
+.day-activities{
+border: 5px solid #34d800;
+border-radius: 2em;
+width:90%;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 3em;
+}
+form{
+	display:block;
+	width: 100%;
+}
+.close{
+
+
+}
+input[type="radio"] + span{ /*the span element that immediately follow the radio button */
+	visibility: hidden; /*temporarily hide the "YES" label*/
+	background: #6EB558;
+}
+ 
+input[type="radio"] + span:after{
+	content: "yes"; /*if CSS are disbled span elements are not displayed*/
+}
+ 
+ 
+input[type="radio"]:checked + span{
+	visibility: visible; /*show the "YES" label only if the radio button is checked*/
+}
+
+#start-form{
+width: 30%;
+min-width:20em;
+border: 5px solid #34d800;
+border-radius: 2em;
+border-top:none;
+border-top-left-radius: 0em;
+border-top-right-radius: 0em;
+text-align: center;
+margin:0;
+margin-left:35%;
+margin-left:calc(35% - 10px );
+	background: #F0F0F0;
+	padding-top:2em;
+}
+#start-form p{
+	width:70%;
+	min-width:10em;
+	margin: 0 15% 1em 15%;
+font-size: 1.5em;
+
+
+}
+#start-form p label{
+float:left;
+clear:left;
+}
+#start-form p input{
+float:right;
+clear:right;
+}
+#start-form .submit{
+margin:1em;
+
+
+}
+.backdrop{
+	text-align:center;
+	width:60%;
+	display:block;
+	margin: 0em 20% 0em 20%;
+	margin-left:calc(20% - 6px);
+
+border:3px solid #E065BB;
+}
+h1, h2 {
+
+	text-align:center;
+}
+.welcome{
+	position: absolute;
+	top:0;
+	margin-top:0;
+	padding: 0em 1em 0.5em 1em;
+	left: calc(20% - 1em);
+	width:60%;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+background:#c10087;
+color:white;
+border-bottom:3px solid #E065BB;
+border-left: 3px solid #E065BB;
+border-right:3px solid #E065BB;
+}
+.bottom-pic{	
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0em 1em 0.5em 1em;
+	margin-left:20%;
+	margin-left: calc(20% - 6px );
+	width:60%;
+	width: calc(60% - 2em);
+
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+background:#c10087;
+color:white;
+border-bottom:3px solid #E065BB;
+border-left: 3px solid #E065BB;
+border-right:3px solid #E065BB;
+
+}
+.parsley-error{
+
+}
+ul.parsley-error-list{
+	border-radius: 5px;
+	border-bottom-left-radius: 0px;
+	position: relative;
+
+		background:#ff5f00;
+	font-size:18px;
+	left:80%;
+	top:-18px;
+	margin:0;
+	list-style-type:none;
+	white-space: nowrap;
+	text-align:left;
+
+	padding:0;
+}
+ul.parsley-error-list li{
+	width: 100%;
+}
+ul.parsley-error-list li:before{
+	content:"* "
+}
