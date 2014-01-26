@@ -7,7 +7,7 @@
 <body>
 
 
-<form class="full-page" action="handle_form.php" method="POST" parsley-validate>
+<form class="full-page" action="activities.php" method="POST" parsley-validate>
 <div class="section">
 	<h4> Accommodation</h4>
 	<span class="info">Please Indicatate your choice of room</span>

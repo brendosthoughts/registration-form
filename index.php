@@ -15,7 +15,7 @@ Enter the Information Below to Get Started
 </h2>
 
 
-<form  id="start-form" action="handle_form.php" method="POST" parsley-validate>
+<form  id="start-form" action="form-page-1.php" method="POST" parsley-validate>
 <p>
 <label for="firstName">Firstname</label>
 <input id="firstName" parsley-required="true" parsley-mincheck="2" parsley-focus="first"  type="text" name="firstname" class="required textArea" placeholder="First Name"/>

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="form.css">
 </head>
 <body>
-<form class="full-page" action="handle_form.php" method="POST" parsley-validate >
+<form class="full-page" action="form-page-2.php" method="POST" parsley-validate >
 	<h4>Participant Name</h4>
 	<span>(Due to Airline regulations, the legal name, as it appears on your identification is required)</span>
 	<input label="First Name" parsley-required="true" type="text" parsley-validation-minlength="2" name="particpant_firstname">
