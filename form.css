@@ -1,6 +1,6 @@
 body{
 overflow-x: hidden;
-background:#87f03c;
+background:#BFC0BE;
 width:100%;
 }
 .wrapper{
@@ -8,8 +8,6 @@ width:100%;
 	height:auto;
 }
 .activity{
-	font-size:1.2em;
-	width: 90%;
 	height: 13.5em;
 	background: #F0F0F0;
 	color: black;
@@ -17,6 +15,7 @@ width:100%;
 	margin: 1em 5% 1em 5%;
 	overflow:hidden;
 	border-radius: 1em;
+	border: 1px solid black;
 }
 .mainInfo img{
 
@@ -31,6 +30,7 @@ position: relative;
 
 }
 .mainInfo .right{
+	text-align: left;
 	width: 65%;
 	float: right;
 	height: 100%;
@@ -184,10 +184,11 @@ display:none;
 width: 20%;
 min-width:8em;
 border-radius: 1em;
-background:#c10087;
-color:white;
-border:3px solid #E065BB;
+background:#2DA82D;
+color:black;
+border:2px solid #000;
 height: 3em;
+font-weight: bold;
 font-size:2em;
 margin: 1em 40% 1em 40%;
 }
@@ -206,18 +207,14 @@ text-align : center;
 margin: 2em 25% 1em 25% ;
 }
 .pre-activities{
-	background:#F0F0F0;
-	width: 90%;
-border: 5px solid #34d800;
-border-bottom:none;
+background: #F0F0F0;
+width: 90%;
+border: 5px solid #6A6C6E;
 border-radius: 2em;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-width:90%;
-margin:0;
-margin-left: 5%;
-margin-right: 5%;
-padding-bottom: 2em;
+width: 90%;
+display: block;
+margin: 2em 5% 2em 5%;
+padding-bottom: 1em
 
 }
 .pre-activities p{
@@ -226,14 +223,20 @@ width: 90%;
 margin: 0em 5% 0em 5%;
 }
 .pre-activities .note{
-	margin: 1.5em 0em 0em 0em ;
-	width:47%;
+border-radius: 4px;
+display: block;
+width: 95%;
+line-height: 1;
+font-size: 1em;
+font-weight: bold;
+padding: 0.5em;
+margin: 1em 2.5% 0em 2.5%;
+color: white;
+background: #000;
+
+}
+.text-note{
 	font-size: 1.3em;
-	font-weight:bold;
-	padding: 0.5em;
-	color: white;
-	background: #ff6f00;
-	float:right;
 }
 .pre-activities .note span {
 	text-decoration: underline;
@@ -259,47 +262,10 @@ form{
 	display:block;
 	width: 100%;
 }
-.close{
-
-
+.extendedTravel{
+	display:none;
 }
 
-#start-form{
-width: 30%;
-min-width:20em;
-border: 5px solid #34d800;
-border-radius: 2em;
-border-top:none;
-border-top-left-radius: 0em;
-border-top-right-radius: 0em;
-text-align: center;
-margin:0;
-margin-left:35%;
-margin-left:calc(35% - 10px );
-	background: #F0F0F0;
-	padding-top:2em;
-}
-#start-form p{
-	width:70%;
-	min-width:10em;
-	margin: 0 15% 1em 15%;
-font-size: 1.5em;
-
-
-}
-#start-form p label{
-float:left;
-clear:left;
-}
-#start-form p input{
-float:right;
-clear:right;
-}
-#start-form .submit{
-margin:1em;
-
-
-}
 .backdrop{
 	text-align:center;
 	width:60%;
@@ -346,36 +312,54 @@ border-left: 3px solid #E065BB;
 border-right:3px solid #E065BB;
 
 }
-.full-page .section{
-	font-size:1.5em;
-	margin: 2em ;
-	border: 5px solid #34d800;
-border-radius: 1em;
+ .section{
+	font-size:1.0em;
+	margin: 1em ;
+	border: 5px solid #6A6C6E;
+	border-radius: 1em;
  width: 80%;
  margin-left: 10%;
 text-align: center;
 
 	background: #F0F0F0;
+	float:left;
+	padding: 0em 1em 1em 0em;
 }
 
 h4{
-	display:block;
-background:#c10087;
-color:white;
-border-bottom-left-radius: 1em;
-border-bottom-right-radius: 1em;
-border:3px solid #E065BB;
-border-top:none;
-height: 2em;
+	display:inline-block;
+	background:#6A6C6E;
+	color:white;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-top:none;
+	height: 1.5em;
+	padding: 0.5em 1em 0em 1em;
+	text-align: center;
+	font-size:1.5em;
+	margin: 0px 0 0.5em auto;
 
-font-size:1.5em;
-	margin-top: 0px;
 }
+.form-left{
+	float: left;
+	width: 50%;
+}
+.form-right{
+	float:right;
+	width:50%;
+}
+.sub{
+	font-size: 1.1em;	
+	margin-top: 1em;
+	border-radius:0.3em;
+	border: 1px solid black;
+}
+
 .full-page .tripExtension{
 	text-align: left;
 }
 .full-page .note{
-	font-size: 0.8em;
+	font-size: 0.9em;
 	display: block;
 	width:95%;
 	text-align: left;
@@ -389,6 +373,11 @@ h7{
 	text-align:center;
 	display:block;
 }
+.label-input{
+	display:inline-block;
+	margin: 0.5em 2.5em 0em 2.5em;
+	white-space: nowrap;
+}
 .full-page .info{
 	margin: 1em;
 	display: block;
@@ -396,21 +385,22 @@ h7{
 	width:100%;
 }
 
-label{
-	margin-left: 5em;
-}
 
 input[type="textarea"]{
 	text-align:left;
-	width: 80%;
-	margin-left: 10%;
-	height: 5em;
+	width: 50em;
+	margin-top:2em;
 }
 
 
 
-
-
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 
 
 
